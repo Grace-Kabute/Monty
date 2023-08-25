@@ -27,6 +27,6 @@ void f_add(stack_t **head, unsigned int counter)
 	k = *head;
 	aux = k->n + k->next->n;
 	k->next->n = aux;
-	*kead = k->next;
+	*head = k->next;
 	free(k);
 }
